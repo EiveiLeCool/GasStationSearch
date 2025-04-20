@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="CENTER" xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.persoonlijke_opdr.MainController">
+  <TextField fx:id="locationInput" promptText="Voer locatie in (bijv. Amsterdam)" />
+  <TextField fx:id="radiusInput" promptText="Voer radius in (in meters)" />
+  <Button text="Zoek naar tankstations" onAction="#onSearchClicked" />
+  <HBox spacing="10" alignment="CENTER">
+    <Button text="Sorteer op Afstand" onAction="#onSortByAfstandClicked"/>
+    <Button text="Sorteer op Prijs" onAction="#onSortByPrijsClicked"/>
+    <Button text="Sorteer op Afstand+Prijs" onAction="#onSortByAfstandPrijsClicked"/>
+  </HBox>
+    <ListView fx:id="stationListView" prefHeight="400.0" prefWidth="300.0" />
+</VBox>
+
+
+
